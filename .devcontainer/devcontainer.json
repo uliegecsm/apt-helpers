@@ -1,0 +1,14 @@
+{
+    "dockerFile": "dockerfile",
+    "context": "..",
+    "extensions" : [
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "ms-python.python",
+        "GitHub.vscode-pull-request-github",
+    ],
+    "runArgs": [
+        "--privileged",
+    ],
+    "onCreateCommand": "git config --global --add safe.directory $PWD"
+}
